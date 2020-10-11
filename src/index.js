@@ -10,9 +10,10 @@ super(props);
 
     render(){
     return  (
-            <div className="parent-container">
-            <div className="side-container"></div>
+            // <div className="parent-container">
+            // <div className="side-container"></div>
              <div className="container">
+                <div className="display" >Sorry! Under Construction! </div>
                 <button className="item 0" id="zero">0</button>
                 <button className="item 1" id="one">1</button>
                 <button className="item 2" id="two">2</button>
@@ -31,7 +32,7 @@ super(props);
                 <button className="item clear" id="clear">C</button>
                 <button className="item equal" id="equal">=</button>
             </div>
-            </div>
+            // </div>
           
         )
         
