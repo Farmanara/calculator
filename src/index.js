@@ -105,7 +105,7 @@ switch(this.state.operator) {
         this.setState({
             display:parseFloat(this.state.firstInput)*parseFloat(this.state.secondInput)
          })
-         return
+         
 
 
     this.setState({
