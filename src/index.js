@@ -90,11 +90,12 @@ switch(this.state.operator) {
         this.setState({
             display:parseFloat(this.state.firstInput)+parseFloat(this.state.secondInput)
         })
+        return
     case "-":
         this.setState({
         display:parseFloat(this.state.firstInput)-parseFloat(this.state.secondInput)
          })
-        
+         return
     case "/":
         this.setState({
             display:parseFloat(this.state.firstInput)/parseFloat(this.state.secondInput)
@@ -104,6 +105,7 @@ switch(this.state.operator) {
         this.setState({
             display:parseFloat(this.state.firstInput)*parseFloat(this.state.secondInput)
          })
+         return
 
 
     this.setState({
