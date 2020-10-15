@@ -22,12 +22,26 @@ this.state= {
 this.clear=this.clear.bind(this);
 this.onClick=this.onClick.bind(this);
 this.equals=this.equals.bind(this);
-
+this.handleDelete=this.handleDelete.bind(this);
     }
 
 
 
 //functions :
+
+
+
+//perfom like backspace when Del key is pressed
+
+handleDelete(){
+
+let input=this.state.Input
+this.setState({
+    Input:input.slice(0,-1),
+    display:input.slice(0,-1)
+})
+}
+
 
 
 // sets display to "0" when C button is pressed
@@ -167,6 +181,7 @@ equals(){
                 <button className="item decimal " id="decimal" value="." onClick={this.onClick}>.</button>
                 <button className="item clear" id="clear"  value="clear" onClick={this.clear}>C</button>
                 <button className="item equal" id="equals" value="=" onClick={this.equals}>=</button>
+                <button className= "item del"  id="del" onClick={this.handleDelete}>Del</button>
             </div>
             // </div>
           

@@ -1,47 +1,60 @@
 html{
     margin:0;
+    background:rgb(0, 0, 0);
     
-    height: 100vh;
 }
 body{
-    padding: 0;
-    margin: 0 0 0 0;
-    height: 100%;
+    background:rgb(0, 0, 0);
 
 }
-#root{
-    height: 100%;
-}
+
 .container {
-    
-    background: rgb(202, 238, 204);
-    font-size:2rem;
-    grid-row: 1;
-    grid-column: 2;
-    border: teal solid 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+    border-radius :20px 0 ;
+    padding-top: 2rem;
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
     gap: 1rem;
     display: grid;
     grid-template-columns:  1fr 1fr 1fr 1fr;
     grid-template-rows:  repeat(8,1fr) ;
     justify-content:center ;
     justify-self: center;
-    min-width: 375;
-    min-height:85vh;
-    height: 100vh;
-    
+    min-width: 100%;
+    min-height: 480px;
+    height: 90%;
+    width: 90vw;
+    max-width: 375px;
     touch-action: manipulation;
       
 }
+button {
+    border-radius :20px 0 ;
 
+    font-size: 2em;
+    font-weight: bolder;
+}
+button:hover{
+    color: lawngreen;
+    background-color: white;
+}
 #display{
+    border-radius :20px 0 ;
+    margin-top: 2rem;
+    padding: 2rem;
     border: solid 2px black;
     grid-column:1 / span 4;
     grid-row:  1 /span 3;
     background:white;
+    font-size: 2em;
+    overflow-wrap: break-word; 
+    
 }
 
-
+    
 #seven{
+
 grid-column:1;
 grid-row: 5;
 }
@@ -122,6 +135,11 @@ grid-row: 5;
 
 }
 #clear {
-    grid-column:1 / span 3;
+    grid-column:1 / span 2;
     grid-row: 4;
 } 
+
+#del{
+    grid-column:3;
+    grid-row:4;
+}
